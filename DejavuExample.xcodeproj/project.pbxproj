@@ -13,6 +13,9 @@
 		1B81421D2967207400BEDD86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B81421B2967207400BEDD86 /* Main.storyboard */; };
 		1B81421F2967207400BEDD86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B81421E2967207400BEDD86 /* Assets.xcassets */; };
 		1B8142222967207400BEDD86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B8142202967207400BEDD86 /* LaunchScreen.storyboard */; };
+		1B81422F2967224800BEDD86 /* sample2.djvu in Resources */ = {isa = PBXBuildFile; fileRef = 1B81422E2967224800BEDD86 /* sample2.djvu */; };
+		1B814231296724A200BEDD86 /* Download.djvu in Resources */ = {isa = PBXBuildFile; fileRef = 1B814230296724A200BEDD86 /* Download.djvu */; };
+		1B81423429672BA100BEDD86 /* Dejavu in Frameworks */ = {isa = PBXBuildFile; productRef = 1B81423329672BA100BEDD86 /* Dejavu */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		1B81421E2967207400BEDD86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B8142212967207400BEDD86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B8142232967207400BEDD86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B81422E2967224800BEDD86 /* sample2.djvu */ = {isa = PBXFileReference; lastKnownFileType = file; path = sample2.djvu; sourceTree = "<group>"; };
+		1B814230296724A200BEDD86 /* Download.djvu */ = {isa = PBXFileReference; lastKnownFileType = file; path = Download.djvu; sourceTree = "<group>"; };
+		1B81423229672B9B00BEDD86 /* Dejavu */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Dejavu; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B81423429672BA100BEDD86 /* Dejavu in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,8 +47,10 @@
 		1B8142092967207400BEDD86 = {
 			isa = PBXGroup;
 			children = (
+				1B8142292967208500BEDD86 /* Packages */,
 				1B8142142967207400BEDD86 /* DejavuExample */,
 				1B8142132967207400BEDD86 /* Products */,
+				1B81422B2967209C00BEDD86 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +68,29 @@
 				1B8142152967207400BEDD86 /* AppDelegate.swift */,
 				1B8142172967207400BEDD86 /* SceneDelegate.swift */,
 				1B8142192967207400BEDD86 /* ViewController.swift */,
+				1B814230296724A200BEDD86 /* Download.djvu */,
+				1B81422E2967224800BEDD86 /* sample2.djvu */,
 				1B81421B2967207400BEDD86 /* Main.storyboard */,
 				1B81421E2967207400BEDD86 /* Assets.xcassets */,
 				1B8142202967207400BEDD86 /* LaunchScreen.storyboard */,
 				1B8142232967207400BEDD86 /* Info.plist */,
 			);
 			path = DejavuExample;
+			sourceTree = "<group>";
+		};
+		1B8142292967208500BEDD86 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				1B81423229672B9B00BEDD86 /* Dejavu */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		1B81422B2967209C00BEDD86 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +109,9 @@
 			dependencies = (
 			);
 			name = DejavuExample;
+			packageProductDependencies = (
+				1B81423329672BA100BEDD86 /* Dejavu */,
+			);
 			productName = DejavuExample;
 			productReference = 1B8142122967207400BEDD86 /* DejavuExample.app */;
 			productType = "com.apple.product-type.application";
@@ -128,6 +157,8 @@
 				1B8142222967207400BEDD86 /* LaunchScreen.storyboard in Resources */,
 				1B81421F2967207400BEDD86 /* Assets.xcassets in Resources */,
 				1B81421D2967207400BEDD86 /* Main.storyboard in Resources */,
+				1B81422F2967224800BEDD86 /* sample2.djvu in Resources */,
+				1B814231296724A200BEDD86 /* Download.djvu in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +389,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1B81423329672BA100BEDD86 /* Dejavu */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Dejavu;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1B81420A2967207400BEDD86 /* Project object */;
 }
